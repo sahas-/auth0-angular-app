@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="en" ng-app="authApp"> 
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+        <title>AngularJs Auth0</title>
+        <script src="bower_components/auth0-lock/build/auth0-lock.js"></script>          
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body ng-init="hello = 'sahas'">
+        <toolbar></toolbar>
+
+        <div layout-padding>
+            <ui-view></ui-view>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.js"></script>
+        <script src="node_modules/angular-aria/angular-aria.js"></script>
+        <script src="node_modules/angular-material/angular-material.js"></script>
+        <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+        <script src="node_modules/angular-storage/dist/angular-storage.js"></script>     
+        <script src="node_modules/auth0-angular/build/auth0-angular.js"></script>                           
+        <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+      
+        <script src="app.js"></script>
+        <script src="components/toolbar/toolbar.dir.js"></script>     
+        <script src="components/profile/profile.ctr.js"></script>
+        
+    </body>
+</html>
